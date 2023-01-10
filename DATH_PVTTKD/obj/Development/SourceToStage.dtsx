@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="56"
-  DTS:VersionGUID="{D7436A09-9340-4A97-8A71-23D42C8D0862}">
+  DTS:VersionBuild="57"
+  DTS:VersionGUID="{6CEDB4CD-9D20-4D65-9FF3-B2986D644B01}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -3640,7 +3640,7 @@ where PHU_GROUP is not null</property>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task"
-      DTS:ThreadHint="5">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -3656,7 +3656,7 @@ where PHU_GROUP is not null</property>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task 1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -3672,7 +3672,7 @@ where PHU_GROUP is not null</property>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task 2"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -3688,7 +3688,7 @@ where PHU_GROUP is not null</property>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task 3"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -3720,7 +3720,7 @@ where PHU_GROUP is not null</property>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task 5"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="5">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -3823,6 +3823,22 @@ where PHU_GROUP is not null</property>
           Size="172,41.6"
           Id="Package\Execute SQL Task 1"
           TopLeft="580.500009792192,27.0190073241988" />
+        <NodeLayout
+          Size="172,41.6"
+          Id="Package\Execute SQL Task 2"
+          TopLeft="30.0000005108971,196.529414520957" />
+        <NodeLayout
+          Size="172,41.6"
+          Id="Package\Execute SQL Task 3"
+          TopLeft="825.05715644457,165.941178797851" />
+        <NodeLayout
+          Size="172,41.6"
+          Id="Package\Execute SQL Task 4"
+          TopLeft="1.4210854715202E-14,305.505885784849" />
+        <NodeLayout
+          Size="172,41.6"
+          Id="Package\Execute SQL Task 5"
+          TopLeft="905.342869440877,295.894120596354" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="175.985715806241,59.9">
@@ -3879,10 +3895,6 @@ where PHU_GROUP is not null</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="172,41.6"
-          Id="Package\Execute SQL Task 2"
-          TopLeft="30.0000005108971,196.529414520957" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="202.000000510897,218.476473360573">
@@ -3905,10 +3917,6 @@ where PHU_GROUP is not null</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="172,41.6"
-          Id="Package\Execute SQL Task 3"
-          TopLeft="825.05715644457,165.941178797851" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
           TopLeft="825.05715644457,186.741178797851">
@@ -3943,10 +3951,6 @@ where PHU_GROUP is not null</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="172,41.6"
-          Id="Package\Execute SQL Task 4"
-          TopLeft="1.4210854715202E-14,305.505885784849" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
           TopLeft="172,324.200003828722">
@@ -3969,10 +3973,6 @@ where PHU_GROUP is not null</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="172,41.6"
-          Id="Package\Execute SQL Task 5"
-          TopLeft="905.342869440877,295.894120596354" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
           TopLeft="905.342869440877,316.694120596354">
@@ -4079,7 +4079,7 @@ where PHU_GROUP is not null</property>
     design-time-name="Package\Data Flow Task Compiled COVID-19 case detail">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\Data Flow Task Compiled COVID-19 case detail\OLE DB Destination"
@@ -4119,9 +4119,7 @@ where PHU_GROUP is not null</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
