@@ -1,0 +1,229 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bff2a098-6e56-482d-9eb2-3053f6734a18" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>COVID19 DDS FACT 6</ID>
+  <Name>COVID19 DDS FACT 6</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="30d4ef88-40be-40da-8b99-2fbb19cfb41f">
+      <ID>Dim Out Break Group</ID>
+      <Name>Dim Out Break Group</Name>
+      <DimensionID>Dim Out Break Group</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f4649bac-40ad-4159-a615-0c0a8d9de02e">
+          <AttributeID>Out Break Group ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="36522800-67c9-459b-bb59-3b7d5325bdfa">
+      <ID>Phu</ID>
+      <Name>Phu</Name>
+      <DimensionID>Dim PHU 3</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="19f2e579-3099-49c6-a3b7-fa18d270931f">
+          <AttributeID>PHU ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="127fe2ea-2c35-4cb2-95d5-e6162552a308">
+      <ID>Case - PHUID</ID>
+      <Name>Case - PHUID</Name>
+      <DimensionID>Dim PHU 3</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ce080b85-c588-423a-98d7-55eb86a57b16">
+          <AttributeID>PHU ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="de977856-6e51-49d8-899a-1f6eef6ab602">
+      <ID>Case - Out Break Group</ID>
+      <Name>Case - Out Break Group</Name>
+      <DimensionID>Dim Out Break Group</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ae9f48c0-6836-4f9f-a028-0a1782448200">
+          <AttributeID>Out Break Group ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="18286878-cf1f-4da4-9932-9695f9e7a740">
+      <ID>Ongoing Out Break PHU</ID>
+      <Name>Ongoing Out Break PHU</Name>
+      <DimensionID>Ongoing Out Break PHU</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="69e231a5-1f36-4cd2-ae2d-23587aa0c970">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0bf97ac0-f504-4381-bdb9-e5de712d222f">
+          <AttributeID>PHUID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9797eda1-cce5-4447-a15c-3fe67d529b28">
+          <AttributeID>Out Break Group ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="2fcf573b-b799-4579-a3d0-79837c249f9b">
+      <ID>Fact6</ID>
+      <Name>Fact6</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="aba08729-9e04-4e75-9f25-309cae04ff76">
+          <ID>Number Ongoing</ID>
+          <Name>Number Ongoing</Name>
+          <Source dwd:design-time-name="7968e9fa-8b1a-4490-8e4d-bab3c8a448ab">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="849ffb2b-7061-4e11-9dc9-ae156cc947d3">
+              <TableID>dbo_Fact6</TableID>
+              <ColumnID>Number_Ongoing</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e651ea36-6e0f-4e79-b429-54e469492884">
+          <ID>Fact6 Count</ID>
+          <Name>Fact6 Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="aa6c5466-0fa4-4da1-9f9b-e191bbff5558">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="6e0cfafc-cd89-41e6-874d-9b3bc6c2a48a">
+              <TableID>dbo_Fact6</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e14d42e3-df55-4005-bf7d-a317850991bf">
+          <CubeDimensionID>Ongoing Out Break PHU</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="47edcccd-4df8-4d7a-b24e-3f394d7e17e0">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a4f42164-8ae5-4e97-815f-914e40ce1c22">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c031462d-8f8b-48c6-8eec-31ff773ac879">
+                    <TableID>dbo_Fact6</TableID>
+                    <ColumnID>CaseID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8e0f70c6-4716-4847-9e8b-2d6541401a95">
+          <CubeDimensionID>Dim Out Break Group</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="825b240a-97ff-476c-bff5-f2e5be76f32a">
+              <AttributeID>Out Break Group ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dfa08286-fd91-46e4-9bc3-49f4ae2d06b6">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c29e0185-93a2-44ca-bbed-d527bd561d72">
+                    <TableID>dbo_Fact6</TableID>
+                    <ColumnID>OutBreakGroupID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="052aa4ad-da8c-484d-8bda-96a925115dd2">
+          <CubeDimensionID>Phu</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3bccbf00-2cf9-4b0b-9c88-5284e5778768">
+              <AttributeID>PHU ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="de176797-0d34-45a4-baea-ec312f468cb3">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a192e80f-96e4-49ba-8773-cf17ea15d9c2">
+                    <TableID>dbo_Fact6</TableID>
+                    <ColumnID>PhuID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="c84467c8-2bf2-4783-9a46-51cf094f15b3">
+          <CubeDimensionID>Case - PHUID</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7df352fd-66c6-4a1b-aecb-61582240f9ef">
+              <AttributeID>PHU ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Ongoing Out Break PHU</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>PHUID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="67d495b2-f838-4dce-9204-e02598313bfa">
+          <CubeDimensionID>Case - Out Break Group</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b0f85a39-1052-4809-83cd-ac9ee1f8c69d">
+              <AttributeID>Out Break Group ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Ongoing Out Break PHU</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Out Break Group ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="6411f566-0546-4c3d-bfa7-77331011b9f2">
+    <DataSourceViewID>COVID19 DDS FACT 6</DataSourceViewID>
+  </Source>
+</Cube>

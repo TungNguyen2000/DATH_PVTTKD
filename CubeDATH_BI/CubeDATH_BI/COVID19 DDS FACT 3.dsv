@@ -1,0 +1,151 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="cffde0cc-e36a-4e29-860e-596deded5190" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>COVID19 DDS FACT 3</ID>
+  <Name>COVID19 DDS FACT 3</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>DDS DATH</DataSourceID>
+  <Schema>
+    <xs:schema id="COVID19_x0020_DDS_x0020_FACT_x0020_3" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="COVID19_x0020_DDS_x0020_FACT_x0020_3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="87086fe6-dfd4-49d0-bf83-dc1beadd8148">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Fact3" msprop:design-time-name="afb55724-d8b9-4802-a129-f8ce426829fe" msprop:DbTableName="Fact3" msprop:FriendlyName="Fact3" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FactID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="af8a80c9-1f5d-493f-a07b-3ae7a8736c4f" msprop:DbColumnName="FactID" msprop:FriendlyName="FactID" type="xs:int" />
+                  <xs:element name="CaseStatusID" msprop:design-time-name="d0d3750e-96e0-4b29-b1be-653c62d83f69" msprop:DbColumnName="CaseStatusID" msprop:FriendlyName="CaseStatusID" type="xs:int" minOccurs="0" />
+                  <xs:element name="GenderID" msprop:design-time-name="6ede6e17-47af-49ee-b46c-a51d3fc69d77" msprop:DbColumnName="GenderID" msprop:FriendlyName="GenderID" type="xs:int" minOccurs="0" />
+                  <xs:element name="AgeGroupID" msprop:design-time-name="9dc1baf9-bfe3-44b9-9c2b-b5db92d7067e" msprop:DbColumnName="AgeGroupID" msprop:FriendlyName="AgeGroupID" type="xs:int" minOccurs="0" />
+                  <xs:element name="YearID" msprop:design-time-name="4ac9aad6-3e99-4807-8c70-5c62f4cddb02" msprop:DbColumnName="YearID" msprop:FriendlyName="YearID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_AgeGroup" msprop:design-time-name="987f41af-d144-4e3e-abae-2b53e9a040c2" msprop:DbTableName="dim_AgeGroup" msprop:FriendlyName="dim_AgeGroup" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="AgeGroupID" msprop:design-time-name="beadb2b5-b729-4f11-a69e-346755ec6267" msprop:DbColumnName="AgeGroupID" msprop:FriendlyName="AgeGroupID" type="xs:int" />
+                  <xs:element name="AgeGroupDetail" msprop:design-time-name="e5da86c2-deb3-431e-9b9a-16c51ec6b8c2" msprop:DbColumnName="AgeGroupDetail" msprop:FriendlyName="AgeGroupDetail">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_CaseStatus" msprop:design-time-name="76e1e37a-e75f-4d76-b7c1-d11fa96834af" msprop:DbTableName="dim_CaseStatus" msprop:FriendlyName="dim_CaseStatus" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CaseStatusID" msprop:design-time-name="a53b95dd-77d8-40e2-8f0f-74fb61c88edd" msprop:DbColumnName="CaseStatusID" msprop:FriendlyName="CaseStatusID" type="xs:int" />
+                  <xs:element name="CaseStatusName" msprop:design-time-name="a81ff7f9-1be7-4922-873d-2f284eefd9af" msprop:DbColumnName="CaseStatusName" msprop:FriendlyName="CaseStatusName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_GENDER" msprop:design-time-name="391fe82a-bbee-49ea-a987-daeee8a91260" msprop:DbTableName="dim_GENDER" msprop:FriendlyName="dim_GENDER" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="GenderID" msprop:design-time-name="632c998b-4337-41c5-8935-a02593878b40" msprop:DbColumnName="GenderID" msprop:FriendlyName="GenderID" type="xs:int" />
+                  <xs:element name="GenderDetail" msprop:design-time-name="ca7d1343-65c4-4c64-bf69-82ad138b4d4c" msprop:DbColumnName="GenderDetail" msprop:FriendlyName="GenderDetail">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_Year" msprop:design-time-name="6d6b00fc-d457-45ef-8deb-fa01a5f493a3" msprop:DbTableName="dim_Year" msprop:FriendlyName="dim_Year" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="YearId" msprop:design-time-name="123b48da-a680-4077-ab95-0b44ca5e4667" msprop:DbColumnName="YearId" msprop:FriendlyName="YearId" type="xs:int" />
+                  <xs:element name="Year" msprop:design-time-name="27f7fc84-36df-49a5-84b2-adc31afc3c46" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact3" />
+          <xs:field xpath="FactID" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_AgeGroup_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_AgeGroup" />
+          <xs:field xpath="AgeGroupID" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_CaseStatus_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_CaseStatus" />
+          <xs:field xpath="CaseStatusID" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_GENDER_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_GENDER" />
+          <xs:field xpath="GenderID" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_Year_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_Year" />
+          <xs:field xpath="YearId" />
+        </xs:unique>
+        <xs:keyref name="FK_CaseStatus_Fact3" refer="dbo_dim_CaseStatus_Constraint1">
+          <xs:selector xpath=".//dbo_Fact3" />
+          <xs:field xpath="CaseStatusID" />
+        </xs:keyref>
+        <xs:keyref name="FK_YearID_Fact3" refer="dbo_dim_Year_Constraint1">
+          <xs:selector xpath=".//dbo_Fact3" />
+          <xs:field xpath="YearID" />
+        </xs:keyref>
+        <xs:keyref name="FK_AgeGroup_Fact3" refer="dbo_dim_AgeGroup_Constraint1">
+          <xs:selector xpath=".//dbo_Fact3" />
+          <xs:field xpath="AgeGroupID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Gender_Fact3" refer="dbo_dim_GENDER_Constraint1">
+          <xs:selector xpath=".//dbo_Fact3" />
+          <xs:field xpath="GenderID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <COVID19_x0020_DDS_x0020_FACT_x0020_3 xmlns="" />
+  </Schema>
+</DataSourceView>

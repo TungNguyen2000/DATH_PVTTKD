@@ -19,7 +19,7 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>VSTTqkR1IYQLCB41gr+i30l/Sps=1/12/2023 11:43:01 PM1/11/2023 10:37:01 AM</TimeStamp>
+        <TimeStamp>bU6kwGKhTBbfVHOCs7/lrSPEFNI=1/13/2023 9:15:17 AM1/11/2023 10:37:01 AM</TimeStamp>
         <ID>
           <String>DDS DATH</String>
         </ID>
@@ -36,6 +36,34 @@
         <TimeStamp>cF6yKtiEm8wx2BsGhl0UAai4u/o=1/12/2023 11:52:59 PM1/12/2023 11:52:59 PM</TimeStamp>
         <ID>
           <String>COVID19 DDS 1 FACT 2</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>H4yx+i7d7+rZ57LaE5GJ69nWLp8=1/13/2023 9:25:06 AM1/13/2023 9:25:06 AM</TimeStamp>
+        <ID>
+          <String>COVID19 DDS FACT 3</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>pdZu/FlOo52PyTBU8H3CUmHTkjs=1/13/2023 9:25:54 AM1/13/2023 9:25:54 AM</TimeStamp>
+        <ID>
+          <String>COVID19 DDS FACT 4</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>CWmgRVIXWCvz/D5n/1WPCx3zNuc=1/13/2023 9:26:29 AM1/13/2023 9:26:29 AM</TimeStamp>
+        <ID>
+          <String>COVID19 DDS FACT 5</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>Bir1c3eVnhhqByPEWvGE1BjdRcc=1/13/2023 9:27:01 AM1/13/2023 9:27:01 AM</TimeStamp>
+        <ID>
+          <String>COVID19 DDS FACT 6</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
@@ -81,8 +109,92 @@
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>JFFwsSAc4qO7S9VxuLhvDChiL8o=1/13/2023 9:25:35 AM1/13/2023 9:25:35 AM</TimeStamp>
+        <ID>
+          <String>Dim GENDER</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>NCYvxrykHM+3/UjvsJf6l+R5Nl0=1/13/2023 9:25:36 AM1/13/2023 9:25:35 AM</TimeStamp>
+        <ID>
+          <String>Dim Age Group</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>m7+d/a6F51HJGaRxxWHfErBrEZ0=1/13/2023 9:25:36 AM1/13/2023 9:25:35 AM</TimeStamp>
+        <ID>
+          <String>Dim Year 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Hd/1fOPzdwrMCQ4c8QFEhtR8sGE=1/13/2023 9:25:36 AM1/13/2023 9:25:35 AM</TimeStamp>
+        <ID>
+          <String>Dim Case Status 2</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>hWM6ip2HGack5n8z4Lz5ve4xLaQ=1/13/2023 9:26:08 AM1/13/2023 9:26:08 AM</TimeStamp>
+        <ID>
+          <String>Dim Day</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>aLZ/P0U7wnIGR7/uzTaw36lAhUI=1/13/2023 9:26:09 AM1/13/2023 9:26:08 AM</TimeStamp>
+        <ID>
+          <String>Dim Case Status 3</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>VZAbSRPreOM3g6cbsdyJqxhA1h4=1/13/2023 9:26:45 AM1/13/2023 9:26:45 AM</TimeStamp>
+        <ID>
+          <String>Dim Day 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>OZd0W15W5388oHoQRDeOI/Fa5/E=1/13/2023 9:26:46 AM1/13/2023 9:26:45 AM</TimeStamp>
+        <ID>
+          <String>Dim PHU 2</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>OT+OxXsUoPXCWEQQ8YVDKc29UBo=1/13/2023 9:26:46 AM1/13/2023 9:26:45 AM</TimeStamp>
+        <ID>
+          <String>Dim Case Status 4</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0E3xmOAZ32KeDCdLDMQFS4C5OMQ=1/13/2023 9:27:15 AM1/13/2023 9:27:15 AM</TimeStamp>
+        <ID>
+          <String>Ongoing Out Break PHU</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2kifBarfhwteI9mNMAnS6BMhACs=1/13/2023 9:27:15 AM1/13/2023 9:27:15 AM</TimeStamp>
+        <ID>
+          <String>Dim Out Break Group</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>VKAE61Nb8CcY6VDCrF1nyZdbO0k=1/13/2023 9:27:15 AM1/13/2023 9:27:15 AM</TimeStamp>
+        <ID>
+          <String>Dim PHU 3</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>dpW9XaDcWQMkAhS+q4EO1S7edBA=1/12/2023 11:50:11 PM1/12/2023 11:50:10 PMaE/ggTOSu7jgvC6igSJcYyGicTk=1/12/2023 11:50:11 PM1/12/2023 11:50:10 PM</TimeStamp>
+        <TimeStamp>dpW9XaDcWQMkAhS+q4EO1S7edBA=1/13/2023 9:18:40 AM1/12/2023 11:50:10 PMaE/ggTOSu7jgvC6igSJcYyGicTk=1/12/2023 11:50:11 PM1/12/2023 11:50:10 PM</TimeStamp>
         <ID>
           <String>COVID19 DDS</String>
         </ID>
@@ -92,6 +204,34 @@
         <TimeStamp>Luv1SLkKHRj0w83D9S8jub9NMrQ=1/12/2023 11:53:17 PM1/12/2023 11:53:17 PM3gBOraYvGyTNqU3AKHkhm8Y+74Y=1/12/2023 11:53:17 PM1/12/2023 11:53:17 PM</TimeStamp>
         <ID>
           <String>COVID19 DDS 1 FACT 2</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>BVs+GslV/SSvDB40PBDfKb1BC/s=1/13/2023 9:25:36 AM1/13/2023 9:25:35 AMeZi8hxHbecJaL3QpyvypNR/WHtg=1/13/2023 9:25:35 AM1/13/2023 9:25:35 AM</TimeStamp>
+        <ID>
+          <String>COVID19 DDS FACT 3</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>/2r3YwQB+eKuKIDNr/kbIovcjrA=1/13/2023 9:26:09 AM1/13/2023 9:26:08 AMbnX1LhUtbTAvIm6/3c1S1ouSNHE=1/13/2023 9:26:09 AM1/13/2023 9:26:08 AM</TimeStamp>
+        <ID>
+          <String>COVID19 DDS FACT 4</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>5z3Up/3YKtLADeKZ6HsQzX8xlEs=1/13/2023 9:26:46 AM1/13/2023 9:26:45 AM/hip8UPi6o3i0ug+cipAwB1XhDw=1/13/2023 9:26:46 AM1/13/2023 9:26:45 AM</TimeStamp>
+        <ID>
+          <String>COVID19 DDS FACT 5</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>itdSqYfG3qpabTB5jHFwvaEXNGA=1/13/2023 9:27:15 AM1/13/2023 9:27:15 AMd72jgup6aP2jnsvrbv3C5Y6dzYU=1/13/2023 9:27:15 AM1/13/2023 9:27:15 AM</TimeStamp>
+        <ID>
+          <String>COVID19 DDS FACT 6</String>
         </ID>
       </ObjectSnapshot>
     </ObjectSnapshots>
@@ -106,5 +246,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2023-01-12T17:40:19.18Z</LastDeployed>
+  <LastDeployed>2023-01-13T02:27:49.753333Z</LastDeployed>
 </DeploymentSnapshot>

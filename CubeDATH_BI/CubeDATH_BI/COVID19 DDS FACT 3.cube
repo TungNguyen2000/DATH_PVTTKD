@@ -1,0 +1,195 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b392fbfb-7f36-440a-acb9-f1f857e8f76b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>COVID19 DDS FACT 3</ID>
+  <Name>COVID19 DDS FACT 3</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="bab51b0d-7901-494e-8eab-3738adffb7b3">
+      <ID>Dim GENDER</ID>
+      <Name>Dim GENDER</Name>
+      <DimensionID>Dim GENDER</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="da9f7f5f-0277-444a-967e-dac2d9bc827d">
+          <AttributeID>Gender ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="71290442-12d0-476e-bec6-8903d3851bcc">
+      <ID>Dim Age Group</ID>
+      <Name>Dim Age Group</Name>
+      <DimensionID>Dim Age Group</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7ae7aa99-3201-4f59-9cf8-7c05ac2a54f2">
+          <AttributeID>Age Group ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ad9b8939-c4dd-4e1c-b2f0-5a73ed3c2a37">
+      <ID>Dim Case Status 2</ID>
+      <Name>Dim Case Status 2</Name>
+      <DimensionID>Dim Case Status 2</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9036f18f-e6b7-4d34-9304-ce5066448e39">
+          <AttributeID>Case Status ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="487c3df3-016d-4a05-8a1d-430921a1eaaf">
+      <ID>Dim Year 1</ID>
+      <Name>Dim Year 1</Name>
+      <DimensionID>Dim Year 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="47e88b75-c347-4853-bf0e-4a76d9d527d7">
+          <AttributeID>Year Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="a0e2f5e5-3d80-4fb1-b1c4-a192a4a63f26">
+      <ID>Fact3</ID>
+      <Name>Fact3</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="7be7d9de-fb9b-44f5-ba49-a0a8b0c16272">
+          <ID>Fact3 Count</ID>
+          <Name>Fact3 Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="5dc42412-8cab-4b5e-ab7f-52011901256e">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="aea125be-f129-4a40-bbad-086b1fd62f21">
+              <TableID>dbo_Fact3</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="120eef74-e7b2-49e0-b009-6c7c86381e49">
+          <CubeDimensionID>Dim GENDER</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="14e3b252-f08c-4539-9d00-a5a788cd738e">
+              <AttributeID>Gender ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7f00ab70-3465-440b-998a-7da4aba22a8e">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1c39df7c-6362-4205-9314-87494de415c7">
+                    <TableID>dbo_Fact3</TableID>
+                    <ColumnID>GenderID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bfe598d6-e7fa-4e90-b104-7ae5fadea783">
+          <CubeDimensionID>Dim Age Group</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="df3863a5-e643-4ac0-b977-f469b0aff52a">
+              <AttributeID>Age Group ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="97fc53c8-625e-4f6a-9280-f4868189a73c">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="12bc8d1d-1107-4674-ba3d-df827e9e6f10">
+                    <TableID>dbo_Fact3</TableID>
+                    <ColumnID>AgeGroupID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="da547be8-f8a0-41f3-8f1c-82e0f0b804e4">
+          <CubeDimensionID>Dim Year 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ce4c7117-3894-4faa-8ce6-995585653d0a">
+              <AttributeID>Year Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="20b88ee1-8973-4ad4-83e8-8c4f0a20a4bc">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="537ba394-bc9e-4e1c-8afc-94947e1176c5">
+                    <TableID>dbo_Fact3</TableID>
+                    <ColumnID>YearID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d750f72f-69bc-42d7-8d58-2a5c0ae71ccc">
+          <CubeDimensionID>Dim Case Status 2</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="55399157-7eff-4720-91d0-5751b2b1522b">
+              <AttributeID>Case Status ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="809bfdff-775f-4b7d-a9ea-e72d3320a97c">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="670f46ea-29b4-4ded-a0eb-22ac349524c7">
+                    <TableID>dbo_Fact3</TableID>
+                    <ColumnID>CaseStatusID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="103d9526-4dba-42f0-92f3-defb68ca1c1f">
+    <DataSourceViewID>COVID19 DDS FACT 3</DataSourceViewID>
+  </Source>
+</Cube>

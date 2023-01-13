@@ -1,0 +1,169 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="90f458a9-e219-49df-bcbf-338592c5cd53" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>COVID19 DDS FACT 5</ID>
+  <Name>COVID19 DDS FACT 5</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>DDS DATH</DataSourceID>
+  <Schema>
+    <xs:schema id="COVID19_x0020_DDS_x0020_FACT_x0020_5" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="COVID19_x0020_DDS_x0020_FACT_x0020_5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="7329de02-c5dd-4589-a45c-fd98d1508250">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Fact5" msprop:design-time-name="48e03fe1-a267-4035-b68b-7f52e5722202" msprop:DbTableName="Fact5" msprop:FriendlyName="Fact5" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FactID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="dccc93ae-2803-43e6-b8a7-51050c4aa462" msprop:DbColumnName="FactID" msprop:FriendlyName="FactID" type="xs:int" />
+                  <xs:element name="CaseStatusID" msprop:design-time-name="0259db52-b4b4-4211-9048-5112eea5b01d" msprop:DbColumnName="CaseStatusID" msprop:FriendlyName="CaseStatusID" type="xs:int" minOccurs="0" />
+                  <xs:element name="PhuID" msprop:design-time-name="ce8cd37c-9c95-48d7-b987-9bfb52aca2e8" msprop:DbColumnName="PhuID" msprop:FriendlyName="PhuID" type="xs:int" minOccurs="0" />
+                  <xs:element name="AtLeastCulmulative" msprop:design-time-name="692437f8-58f9-4257-a851-d26534e338fb" msprop:DbColumnName="AtLeastCulmulative" msprop:FriendlyName="AtLeastCulmulative" type="xs:int" minOccurs="0" />
+                  <xs:element name="SecondCulmulative" msprop:design-time-name="3a2774f4-9d96-4b36-b5a4-31497eaef047" msprop:DbColumnName="SecondCulmulative" msprop:FriendlyName="SecondCulmulative" type="xs:int" minOccurs="0" />
+                  <xs:element name="FullyCulmulative" msprop:design-time-name="5acdbd1a-e334-4d42-b182-c539dd939daa" msprop:DbColumnName="FullyCulmulative" msprop:FriendlyName="FullyCulmulative" type="xs:int" minOccurs="0" />
+                  <xs:element name="ThirdCulmulative" msprop:design-time-name="b95f7237-5185-42c8-8614-4ebec1f2defb" msprop:DbColumnName="ThirdCulmulative" msprop:FriendlyName="ThirdCulmulative" type="xs:int" minOccurs="0" />
+                  <xs:element name="DayID" msprop:design-time-name="7bf87d5d-2d18-4f98-a577-93531784640f" msprop:DbColumnName="DayID" msprop:FriendlyName="DayID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_PHU" msprop:design-time-name="e5159982-ee1c-4b2b-a922-76b99f899bac" msprop:DbTableName="dim_PHU" msprop:FriendlyName="dim_PHU" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PHU_ID" msprop:design-time-name="b25e5679-847e-4498-90fd-2cae5f801a9e" msprop:DbColumnName="PHU_ID" msprop:FriendlyName="PHU_ID" type="xs:int" />
+                  <xs:element name="ReportingPHU" msprop:design-time-name="a2762a6c-507e-41e1-b50b-e0261d6ad878" msprop:DbColumnName="ReportingPHU" msprop:FriendlyName="ReportingPHU">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ReportingPhuAddress" msprop:design-time-name="0d10e6f4-6748-4fe9-890c-d5194424c77d" msprop:DbColumnName="ReportingPhuAddress" msprop:FriendlyName="ReportingPhuAddress" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ReportingPHUPostalCode" msprop:design-time-name="11c7a425-7ccc-4207-8d3c-e37ce904a6fb" msprop:DbColumnName="ReportingPHUPostalCode" msprop:FriendlyName="ReportingPHUPostalCode" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ReportingPHUWebsite" msprop:design-time-name="70dab1b7-7f17-4a73-aabb-2f4c33a060e4" msprop:DbColumnName="ReportingPHUWebsite" msprop:FriendlyName="ReportingPHUWebsite" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Reporting_PHU_Latitude" msprop:design-time-name="966a275f-2d01-4440-b086-7920d80ff793" msprop:DbColumnName="Reporting_PHU_Latitude" msprop:FriendlyName="Reporting_PHU_Latitude" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Reporting_PHU_Longitude" msprop:design-time-name="9d5b7ad6-5154-4f61-8b2d-f49ea10dfd59" msprop:DbColumnName="Reporting_PHU_Longitude" msprop:FriendlyName="Reporting_PHU_Longitude" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PHUGroupID" msprop:design-time-name="f06a4eed-fbd2-4874-8eaa-7e16892af399" msprop:DbColumnName="PHUGroupID" msprop:FriendlyName="PHUGroupID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_CaseStatus" msprop:design-time-name="a8bdfe6e-9cc5-47fa-b7e4-e686066072ff" msprop:DbTableName="dim_CaseStatus" msprop:FriendlyName="dim_CaseStatus" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CaseStatusID" msprop:design-time-name="648f599b-9506-4453-af70-4bb11c0ade83" msprop:DbColumnName="CaseStatusID" msprop:FriendlyName="CaseStatusID" type="xs:int" />
+                  <xs:element name="CaseStatusName" msprop:design-time-name="2c61838c-f94f-408c-ab33-29855d4ee9e2" msprop:DbColumnName="CaseStatusName" msprop:FriendlyName="CaseStatusName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_Day" msprop:design-time-name="97a832fa-c3c9-4068-8dd1-cf3c75c189ad" msprop:DbTableName="dim_Day" msprop:FriendlyName="dim_Day" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DayId" msprop:design-time-name="a6582077-2e13-4b64-9211-9c188d946dcf" msprop:DbColumnName="DayId" msprop:FriendlyName="DayId" type="xs:int" />
+                  <xs:element name="Day" msprop:design-time-name="c176014d-c5d9-43a0-bd7b-73bf09d5c18d" msprop:DbColumnName="Day" msprop:FriendlyName="Day" type="xs:int" />
+                  <xs:element name="MonthId" msprop:design-time-name="37a07e70-7c6a-4946-880f-4b9e4263f56a" msprop:DbColumnName="MonthId" msprop:FriendlyName="MonthId" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact5" />
+          <xs:field xpath="FactID" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_PHU_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_PHU" />
+          <xs:field xpath="PHU_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_CaseStatus_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_CaseStatus" />
+          <xs:field xpath="CaseStatusID" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_Day_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_Day" />
+          <xs:field xpath="DayId" />
+        </xs:unique>
+        <xs:keyref name="FK_CaseStatus_Fact5" refer="dbo_dim_CaseStatus_Constraint1">
+          <xs:selector xpath=".//dbo_Fact5" />
+          <xs:field xpath="CaseStatusID" />
+        </xs:keyref>
+        <xs:keyref name="FK_PHU_Fact5" refer="dbo_dim_PHU_Constraint1">
+          <xs:selector xpath=".//dbo_Fact5" />
+          <xs:field xpath="PhuID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Day_Fact5" refer="dbo_dim_Day_Constraint1">
+          <xs:selector xpath=".//dbo_Fact5" />
+          <xs:field xpath="DayID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <COVID19_x0020_DDS_x0020_FACT_x0020_5 xmlns="" />
+  </Schema>
+</DataSourceView>

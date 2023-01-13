@@ -7,9 +7,14 @@
           <ConfigurationSetting>
             <Id>DDS DATH</Id>
             <Name>DDS DATH</Name>
-            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdaWpNMp6qEmsPEhF20dOGAAAAAASAAAARABEAFMAIABEAEEAVABIAAAAEGYAAAABAAAgAAAAPrD2CEUG45qtvXZLrzjiisSucN/A8lA49XZpK5nYfokAAAAADoAAAAACAAAgAAAArFIobJHBiSVWnJCuDgAR1422SD5wgvBBx/CfkbXko+QgAAAAcyeJBgq9JOzAE5TcMBkP5RlSXpEXsJioQYGlY9iXJ9xAAAAA963V2wTEbACBp4mbYvRZ77l+2o5RYehnwZT1WyOLhAsBIx7mmewTslS4tJkjIm17fLz4vm1dJ7x2xzCpMZslGA==</Value>
           </ConfigurationSetting>
         </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>DDS DATH</Id>
+            <Name>DDS DATH</Name>
+          </ConfigurationSetting>
+        </UserPasswords>
         <TargetServer>MSI\MSSQL_ANALYSIS</TargetServer>
         <TargetDatabase>CubeDATH_BI</TargetDatabase>
         <StartObject>

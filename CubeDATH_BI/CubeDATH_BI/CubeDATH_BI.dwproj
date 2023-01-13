@@ -27,6 +27,46 @@
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
+    <ProjectItem>
+      <Name>COVID19 DDS FACT 3.cube</Name>
+      <FullPath>COVID19 DDS FACT 3.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>COVID19 DDS FACT 3.partitions</Name>
+          <FullPath>COVID19 DDS FACT 3.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>COVID19 DDS FACT 4.cube</Name>
+      <FullPath>COVID19 DDS FACT 4.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>COVID19 DDS FACT 4.partitions</Name>
+          <FullPath>COVID19 DDS FACT 4.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>COVID19 DDS FACT 5.cube</Name>
+      <FullPath>COVID19 DDS FACT 5.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>COVID19 DDS FACT 5.partitions</Name>
+          <FullPath>COVID19 DDS FACT 5.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>COVID19 DDS FACT 6.cube</Name>
+      <FullPath>COVID19 DDS FACT 6.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>COVID19 DDS FACT 6.partitions</Name>
+          <FullPath>COVID19 DDS FACT 6.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
@@ -53,6 +93,54 @@
       <Name>Dim Case Status 1.dim</Name>
       <FullPath>Dim Case Status 1.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Dim GENDER.dim</Name>
+      <FullPath>Dim GENDER.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Age Group.dim</Name>
+      <FullPath>Dim Age Group.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Year 1.dim</Name>
+      <FullPath>Dim Year 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Case Status 2.dim</Name>
+      <FullPath>Dim Case Status 2.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Day.dim</Name>
+      <FullPath>Dim Day.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Case Status 3.dim</Name>
+      <FullPath>Dim Case Status 3.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Day 1.dim</Name>
+      <FullPath>Dim Day 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim PHU 2.dim</Name>
+      <FullPath>Dim PHU 2.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Case Status 4.dim</Name>
+      <FullPath>Dim Case Status 4.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ongoing Out Break PHU.dim</Name>
+      <FullPath>Ongoing Out Break PHU.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Out Break Group.dim</Name>
+      <FullPath>Dim Out Break Group.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim PHU 3.dim</Name>
+      <FullPath>Dim PHU 3.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
@@ -69,6 +157,22 @@
       <Name>COVID19 DDS 1 FACT 2.dsv</Name>
       <FullPath>COVID19 DDS 1 FACT 2.dsv</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>COVID19 DDS FACT 3.dsv</Name>
+      <FullPath>COVID19 DDS FACT 3.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>COVID19 DDS FACT 4.dsv</Name>
+      <FullPath>COVID19 DDS FACT 4.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>COVID19 DDS FACT 5.dsv</Name>
+      <FullPath>COVID19 DDS FACT 5.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>COVID19 DDS FACT 6.dsv</Name>
+      <FullPath>COVID19 DDS FACT 6.dsv</FullPath>
+    </ProjectItem>
   </DataSourceViews>
   <Configurations>
     <Configuration>
@@ -78,7 +182,7 @@
           <ConfigurationSetting>
             <Id>DDS DATH</Id>
             <Name>DDS DATH</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=.;Persist Security Info=True;User ID=;Initial Catalog=COVID19_DDS</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=.;User ID=;Initial Catalog=COVID19_DDS</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>

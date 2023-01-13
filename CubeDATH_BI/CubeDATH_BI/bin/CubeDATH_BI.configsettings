@@ -3,7 +3,7 @@
     <DataSources>
       <DataSource>
         <ID>DDS DATH</ID>
-        <ConnectionString>Provider=SQLNCLI11.1;Data Source=.;Persist Security Info=True;User ID=;Initial Catalog=COVID19_DDS</ConnectionString>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=.;User ID=;Initial Catalog=COVID19_DDS</ConnectionString>
         <ImpersonationInfo>
           <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
           <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
@@ -29,6 +29,42 @@
       <Dimension>
         <ID>Dim Case Status 1</ID>
       </Dimension>
+      <Dimension>
+        <ID>Dim GENDER</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Age Group</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Year 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Case Status 2</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Day</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Case Status 3</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Day 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim PHU 2</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Case Status 4</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Ongoing Out Break PHU</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Out Break Group</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim PHU 3</ID>
+      </Dimension>
     </Dimensions>
     <Cubes>
       <Cube>
@@ -52,6 +88,58 @@
             <Partitions>
               <Partition>
                 <ID>Fact2</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>COVID19 DDS FACT 3</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact3</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact3</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>COVID19 DDS FACT 4</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact4</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact4</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>COVID19 DDS FACT 5</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact5</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact5</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>COVID19 DDS FACT 6</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact6</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact6</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>
