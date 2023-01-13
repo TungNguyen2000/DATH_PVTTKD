@@ -1,0 +1,110 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>CubeDATH_BI</Database>
+    <Server>MSI\MSSQL_ANALYSIS</Server>
+    <ConnectionString>Data Source=MSI\MSSQL_ANALYSIS;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>VSTTqkR1IYQLCB41gr+i30l/Sps=1/12/2023 11:43:01 PM1/11/2023 10:37:01 AM</TimeStamp>
+        <ID>
+          <String>DDS DATH</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>xefyiSpkl6l0LGMpoLZ8qGVfaPA=1/12/2023 11:49:14 PM1/12/2023 11:49:13 PM</TimeStamp>
+        <ID>
+          <String>COVID19 DDS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>cF6yKtiEm8wx2BsGhl0UAai4u/o=1/12/2023 11:52:59 PM1/12/2023 11:52:59 PM</TimeStamp>
+        <ID>
+          <String>COVID19 DDS 1 FACT 2</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Wo/ra4KN2qqiPqarDTETMS5PKkU=1/12/2023 11:50:11 PM1/12/2023 11:50:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Year</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>cRerDmuMoCWmMMcDEWXtspg7HEo=1/12/2023 11:50:11 PM1/12/2023 11:50:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Case Status</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>68xBjvwYiJDo9aD+8sjLJGN7x1g=1/12/2023 11:50:11 PM1/12/2023 11:50:10 PM</TimeStamp>
+        <ID>
+          <String>Dim PHU</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>NYdTzg8WsREMa0DFNzqsiqUtOvw=1/12/2023 11:53:17 PM1/12/2023 11:53:17 PM</TimeStamp>
+        <ID>
+          <String>Dim PHU 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>lPzu5YX9EVUSYSR1iRJf7tJLP5Y=1/12/2023 11:53:17 PM1/12/2023 11:53:17 PM</TimeStamp>
+        <ID>
+          <String>Dim Quarter</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8XmNgN4OfsqAVBaMVnLFmk7Tu7M=1/12/2023 11:53:17 PM1/12/2023 11:53:17 PM</TimeStamp>
+        <ID>
+          <String>Dim Case Status 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>dpW9XaDcWQMkAhS+q4EO1S7edBA=1/12/2023 11:50:11 PM1/12/2023 11:50:10 PMaE/ggTOSu7jgvC6igSJcYyGicTk=1/12/2023 11:50:11 PM1/12/2023 11:50:10 PM</TimeStamp>
+        <ID>
+          <String>COVID19 DDS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>Luv1SLkKHRj0w83D9S8jub9NMrQ=1/12/2023 11:53:17 PM1/12/2023 11:53:17 PM3gBOraYvGyTNqU3AKHkhm8Y+74Y=1/12/2023 11:53:17 PM1/12/2023 11:53:17 PM</TimeStamp>
+        <ID>
+          <String>COVID19 DDS 1 FACT 2</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>GgqWiZqxR7dXTYr+6cTCMx6BgRc=1/11/2023 10:32:27 AM1/11/2023 10:32:26 AM</TimeStamp>
+      <ID>
+        <String>CubeDATH_BI</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2023-01-12T17:40:19.18Z</LastDeployed>
+</DeploymentSnapshot>

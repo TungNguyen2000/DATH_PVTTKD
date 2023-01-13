@@ -1,0 +1,1635 @@
+﻿<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>CubeDATH_BI</ID>
+  <Name>CubeDATH_BI</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <LastUpdate>0001-01-01T00:00:00Z</LastUpdate>
+  <DataSourceImpersonationInfo>
+    <ImpersonationMode>Default</ImpersonationMode>
+    <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+  </DataSourceImpersonationInfo>
+  <Dimensions>
+    <Dimension>
+      <ID>Dim Year</ID>
+      <Name>Dim Year</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>COVID19 DDS</DataSourceViewID>
+      </Source>
+      <UnknownMember>Visible</UnknownMember>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Year Id</ID>
+          <Name>Year Id</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <NullProcessing>UnknownMember</NullProcessing>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dim_Year</TableID>
+                <ColumnID>YearId</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Dim Case Status</ID>
+      <Name>Dim Case Status</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>COVID19 DDS</DataSourceViewID>
+      </Source>
+      <UnknownMember>Visible</UnknownMember>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Case Status ID</ID>
+          <Name>Case Status ID</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <NullProcessing>UnknownMember</NullProcessing>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dim_CaseStatus</TableID>
+                <ColumnID>CaseStatusID</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Dim PHU</ID>
+      <Name>Dim PHU</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>COVID19 DDS</DataSourceViewID>
+      </Source>
+      <UnknownMember>Visible</UnknownMember>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>PHU ID</ID>
+          <Name>PHU ID</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <NullProcessing>UnknownMember</NullProcessing>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dim_PHU</TableID>
+                <ColumnID>PHU_ID</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Dim PHU 1</ID>
+      <Name>Dim PHU 1</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>COVID19 DDS 1 FACT 2</DataSourceViewID>
+      </Source>
+      <UnknownMember>Visible</UnknownMember>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>PHU ID</ID>
+          <Name>PHU ID</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <NullProcessing>UnknownMember</NullProcessing>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dim_PHU</TableID>
+                <ColumnID>PHU_ID</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Dim Quarter</ID>
+      <Name>Dim Quarter</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>COVID19 DDS 1 FACT 2</DataSourceViewID>
+      </Source>
+      <UnknownMember>Visible</UnknownMember>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Quarter Id</ID>
+          <Name>Quarter Id</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <NullProcessing>UnknownMember</NullProcessing>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dim_Quarter</TableID>
+                <ColumnID>QuarterId</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Dim Case Status 1</ID>
+      <Name>Dim Case Status 1</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>COVID19 DDS 1 FACT 2</DataSourceViewID>
+      </Source>
+      <UnknownMember>Visible</UnknownMember>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Case Status ID</ID>
+          <Name>Case Status ID</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <NullProcessing>UnknownMember</NullProcessing>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dim_CaseStatus</TableID>
+                <ColumnID>CaseStatusID</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+  </Dimensions>
+  <Cubes>
+    <Cube>
+      <ID>COVID19 DDS</ID>
+      <Name>COVID19 DDS</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5858" scrolltop="-2591" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="87" x="18711" y="11282" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fact1" left="859" top="3988" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000003090000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_Fact1" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_PHU" left="20" top="8695" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="4678" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e000046120000a30e0000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_dim_PHU" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_CaseStatus" left="666" top="0" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3387" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e00003b0d000034060000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_dim_CaseStatus" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_Year" left="6259" top="4347" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000034060000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_dim_Year" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline" left="3559" top="4742" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[FK_YearID_Fact1]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="1" sourceattachpoint="12" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="6259" y="5141" />
+                  <point x="3859" y="5141" />
+                </connector>
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline" left="1960" top="1089" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[FK_CaseStatus_Fact1]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="1" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="2359" y="1588" />
+                  <point x="2359" y="3988" />
+                </connector>
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline" left="1960" top="5995" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[FK_PHUID_Fact1]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="8" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="2359" y="8695" />
+                  <point x="2359" y="6295" />
+                </connector>
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-5858</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-2591</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>87</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Dimensions>
+        <Dimension>
+          <ID>Dim Case Status</ID>
+          <Name>Dim Case Status</Name>
+          <DimensionID>Dim Case Status</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Case Status ID</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension>
+          <ID>Dim Year</ID>
+          <Name>Dim Year</Name>
+          <DimensionID>Dim Year</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Year Id</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension>
+          <ID>Dim PHU</ID>
+          <Name>Dim PHU</Name>
+          <DimensionID>Dim PHU</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>PHU ID</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup>
+          <ID>Fact1</ID>
+          <Name>Fact1</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Measures>
+            <Measure>
+              <ID>Fact1 Count</ID>
+              <Name>Fact1 Count</Name>
+              <AggregateFunction>Count</AggregateFunction>
+              <Source>
+                <DataType>Integer</DataType>
+                <DataSize>4</DataSize>
+                <Source xsi:type="RowBinding">
+                  <TableID>dbo_Fact1</TableID>
+                </Source>
+              </Source>
+            </Measure>
+          </Measures>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <Dimensions>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Dim Year</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Year Id</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_Fact1</TableID>
+                        <ColumnID>YearID</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Dim Case Status</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Case Status ID</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_Fact1</TableID>
+                        <ColumnID>CaseStatusID</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Dim PHU</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>PHU ID</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_Fact1</TableID>
+                        <ColumnID>PHUID</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Partitions>
+            <Partition>
+              <ID>Fact1</ID>
+              <Name>Fact1</Name>
+              <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+              <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+              <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+              <State>Unprocessed</State>
+              <Source xsi:type="DsvTableBinding">
+                <DataSourceViewID>COVID19 DDS</DataSourceViewID>
+                <TableID>dbo_Fact1</TableID>
+              </Source>
+              <StorageMode>Molap</StorageMode>
+              <CurrentStorageMode>Molap</CurrentStorageMode>
+              <ProcessingMode>Regular</ProcessingMode>
+            </Partition>
+          </Partitions>
+        </MeasureGroup>
+      </MeasureGroups>
+      <Source>
+        <DataSourceViewID>COVID19 DDS</DataSourceViewID>
+      </Source>
+    </Cube>
+    <Cube>
+      <ID>COVID19 DDS 1 FACT 2</ID>
+      <Name>COVID19 DDS 1 FACT 2</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5858" scrolltop="-5000" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="87" x="18711" y="11282" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_PHU" left="20" top="8695" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4678" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e000046120000a30e0000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_dim_PHU" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_CaseStatus" left="666" top="0" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3387" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e00003b0d000034060000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_dim_CaseStatus" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_Quarter" left="6259" top="4168" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="1947" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b070000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_dim_Quarter" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fact2" left="859" top="3988" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000003090000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_Fact2" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline" left="1960" top="5995" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[FK_PHU_Fact2]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="4" sourceattachpoint="8" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="2359" y="8695" />
+                  <point x="2359" y="6295" />
+                </connector>
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline" left="1960" top="1089" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[FK_CaseStatus_Fact2]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="4" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="2359" y="1588" />
+                  <point x="2359" y="3988" />
+                </connector>
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline" left="3559" top="4742" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[FK_Quarter_Fact2]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="4" sourceattachpoint="12" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="6259" y="5141" />
+                  <point x="3859" y="5141" />
+                </connector>
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-5858</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-5000</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>87</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Dimensions>
+        <Dimension>
+          <ID>Dim Case Status 1</ID>
+          <Name>Dim Case Status 1</Name>
+          <DimensionID>Dim Case Status 1</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Case Status ID</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension>
+          <ID>Dim PHU 1</ID>
+          <Name>Dim PHU 1</Name>
+          <DimensionID>Dim PHU 1</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>PHU ID</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension>
+          <ID>Dim Quarter</ID>
+          <Name>Dim Quarter</Name>
+          <DimensionID>Dim Quarter</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Quarter Id</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup>
+          <ID>Fact2</ID>
+          <Name>Fact2</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Measures>
+            <Measure>
+              <ID>Fact2 Count</ID>
+              <Name>Fact2 Count</Name>
+              <AggregateFunction>Count</AggregateFunction>
+              <Source>
+                <DataType>Integer</DataType>
+                <DataSize>4</DataSize>
+                <Source xsi:type="RowBinding">
+                  <TableID>dbo_Fact2</TableID>
+                </Source>
+              </Source>
+            </Measure>
+          </Measures>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <Dimensions>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Dim PHU 1</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>PHU ID</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_Fact2</TableID>
+                        <ColumnID>PHUID</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Dim Quarter</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Quarter Id</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_Fact2</TableID>
+                        <ColumnID>QuarterID</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Dim Case Status 1</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Case Status ID</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_Fact2</TableID>
+                        <ColumnID>CaseStatusID</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Partitions>
+            <Partition>
+              <ID>Fact2</ID>
+              <Name>Fact2</Name>
+              <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+              <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+              <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+              <State>Unprocessed</State>
+              <Source xsi:type="DsvTableBinding">
+                <DataSourceViewID>COVID19 DDS 1 FACT 2</DataSourceViewID>
+                <TableID>dbo_Fact2</TableID>
+              </Source>
+              <StorageMode>Molap</StorageMode>
+              <CurrentStorageMode>Molap</CurrentStorageMode>
+              <ProcessingMode>Regular</ProcessingMode>
+            </Partition>
+          </Partitions>
+        </MeasureGroup>
+      </MeasureGroups>
+      <Source>
+        <DataSourceViewID>COVID19 DDS 1 FACT 2</DataSourceViewID>
+      </Source>
+    </Cube>
+  </Cubes>
+  <DataSources>
+    <DataSource xsi:type="RelationalDataSource">
+      <ID>DDS DATH</ID>
+      <Name>DDS DATH</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <ConnectionString>Provider=SQLNCLI11.1;Data Source=.;Persist Security Info=True;User ID=;Initial Catalog=COVID19_DDS</ConnectionString>
+      <ConnectionStringSecurity>PasswordRemoved</ConnectionStringSecurity>
+      <ImpersonationInfo>
+        <ImpersonationMode>ImpersonateServiceAccount</ImpersonationMode>
+        <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+      </ImpersonationInfo>
+      <Timeout>PT0S</Timeout>
+    </DataSource>
+  </DataSources>
+  <DataSourceViews>
+    <DataSourceView>
+      <ID>COVID19 DDS</ID>
+      <Name>COVID19 DDS</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+          <Value>_ALL_TABLES_</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+          <Value></Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+          <Value>
+            <Layouts xmlns="">
+              <Diagram>
+                <Name>_ALL_TABLES_</Name>
+                <DiagramLayout>
+                  <dds>
+                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5082" scrolltop="-678" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="97" x="19304" y="12573" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                      <font>
+                        <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                      </font>
+                      <mouseicon>
+                        <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                      </mouseicon>
+                    </diagram>
+                    <layoutmanager>
+                      <ddsxmlobj />
+                    </layoutmanager>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fact1" left="859" top="3988" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000003090000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_Fact1" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_CaseStatus" left="666" top="0" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3387" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e00003b0d000034060000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_dim_CaseStatus" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_PHU" left="20" top="8695" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="4678" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e000046120000a30e0000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_dim_PHU" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_Year" left="6259" top="4347" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000034060000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_dim_Year" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="3559" top="4742" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobj>
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                        </ddsxmlobj>
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dataSet.Relations[FK_YearID_Fact1]" vartype="8" />
+                          <property name="Virtual" value="0" vartype="11" />
+                          <property name="VisibleAP" value="0" vartype="3" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="1" sourceattachpoint="12" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="6259" y="5141" />
+                        <point x="3859" y="5141" />
+                      </connector>
+                    </ddscontrol>
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="1960" top="1089" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobj>
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                        </ddsxmlobj>
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dataSet.Relations[FK_CaseStatus_Fact1]" vartype="8" />
+                          <property name="Virtual" value="0" vartype="11" />
+                          <property name="VisibleAP" value="0" vartype="3" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="2359" y="1588" />
+                        <point x="2359" y="3988" />
+                      </connector>
+                    </ddscontrol>
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="1960" top="5995" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobj>
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                        </ddsxmlobj>
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dataSet.Relations[FK_PHUID_Fact1]" vartype="8" />
+                          <property name="Virtual" value="0" vartype="11" />
+                          <property name="VisibleAP" value="0" vartype="3" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="1" sourceattachpoint="8" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="2359" y="8695" />
+                        <point x="2359" y="6295" />
+                      </connector>
+                    </ddscontrol>
+                  </dds>
+</DiagramLayout>
+                <ShowRelationshipNames>False</ShowRelationshipNames>
+                <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+                <DiagramViewPortLeft>-5082</DiagramViewPortLeft>
+                <DiagramViewPortTop>-678</DiagramViewPortTop>
+                <DiagramBoundingLeft>0</DiagramBoundingLeft>
+                <DiagramBoundingTop>0</DiagramBoundingTop>
+                <DiagramZoom>97</DiagramZoom>
+              </Diagram>
+            </Layouts>
+          </Value>
+        </Annotation>
+      </Annotations>
+      <DataSourceID>DDS DATH</DataSourceID>
+      <Schema>
+        <xs:schema id="COVID19_x0020_DDS" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+          <xs:element name="COVID19_x0020_DDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="a15376cb-24cf-4d0c-8d93-cb1916f616ed">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="dbo_Fact1" msprop:design-time-name="6f61d355-e757-4e74-aaf7-83a0973c63f5" msprop:FriendlyName="Fact1" msprop:DbSchemaName="dbo" msprop:DbTableName="Fact1" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="FactID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="33953ee3-a5a2-4bf4-ad8c-ad78fb516059" msprop:DbColumnName="FactID" msprop:FriendlyName="FactID" type="xs:int" />
+                      <xs:element name="YearID" msprop:design-time-name="4878cb5c-7c50-46b8-8a59-09a7e70e3649" msprop:DbColumnName="YearID" msprop:FriendlyName="YearID" type="xs:int" minOccurs="0" />
+                      <xs:element name="PHUID" msprop:design-time-name="a1099fff-6a80-4a9b-abe5-538f3898a84c" msprop:DbColumnName="PHUID" msprop:FriendlyName="PHUID" type="xs:int" minOccurs="0" />
+                      <xs:element name="CaseStatusID" msprop:design-time-name="02e28d00-aaf5-448f-973a-7d086a127daa" msprop:DbColumnName="CaseStatusID" msprop:FriendlyName="CaseStatusID" type="xs:int" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_dim_CaseStatus" msprop:design-time-name="8c872ccf-2e8c-4c31-b178-d362c0aad884" msprop:FriendlyName="dim_CaseStatus" msprop:DbSchemaName="dbo" msprop:DbTableName="dim_CaseStatus" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="CaseStatusID" msprop:design-time-name="dc930320-183b-40b0-b7e1-1c5e5215d66d" msprop:DbColumnName="CaseStatusID" msprop:FriendlyName="CaseStatusID" type="xs:int" />
+                      <xs:element name="CaseStatusName" msprop:design-time-name="470bd730-ca7b-491f-854d-3a7f9f36d858" msprop:DbColumnName="CaseStatusName" msprop:FriendlyName="CaseStatusName">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_dim_PHU" msprop:design-time-name="a90f2c29-f1f9-4989-ab7f-89b5525c8c77" msprop:FriendlyName="dim_PHU" msprop:DbSchemaName="dbo" msprop:DbTableName="dim_PHU" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="PHU_ID" msprop:design-time-name="56afebf7-2202-494c-a9fc-ee4370785db3" msprop:DbColumnName="PHU_ID" msprop:FriendlyName="PHU_ID" type="xs:int" />
+                      <xs:element name="ReportingPHU" msprop:design-time-name="23a63048-0731-4a72-b6ea-9d7c710ee81d" msprop:DbColumnName="ReportingPHU" msprop:FriendlyName="ReportingPHU">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="100" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="ReportingPhuAddress" msprop:design-time-name="e73854a4-dd7c-4ff0-999e-8f1a0c5093a8" msprop:DbColumnName="ReportingPhuAddress" msprop:FriendlyName="ReportingPhuAddress" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="1000" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="ReportingPHUPostalCode" msprop:design-time-name="2b4fb21a-a793-4ef3-ae3e-e03c74996a6e" msprop:DbColumnName="ReportingPHUPostalCode" msprop:FriendlyName="ReportingPHUPostalCode" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="ReportingPHUWebsite" msprop:design-time-name="2ca4c7c4-8e53-4df8-a7ef-f35751826132" msprop:DbColumnName="ReportingPHUWebsite" msprop:FriendlyName="ReportingPHUWebsite" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="1000" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Reporting_PHU_Latitude" msprop:design-time-name="c1f38574-303e-424d-95d0-e6d1e3eefd44" msprop:DbColumnName="Reporting_PHU_Latitude" msprop:FriendlyName="Reporting_PHU_Latitude" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Reporting_PHU_Longitude" msprop:design-time-name="a58c2114-669c-4107-8796-3d78ee4f1624" msprop:DbColumnName="Reporting_PHU_Longitude" msprop:FriendlyName="Reporting_PHU_Longitude" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="PHUGroupID" msprop:design-time-name="f0623c1a-fe26-4156-adbc-1d3ae1cafa44" msprop:DbColumnName="PHUGroupID" msprop:FriendlyName="PHUGroupID" type="xs:int" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_dim_Year" msprop:design-time-name="fea41234-7adb-4ab0-b11b-432e7058fe95" msprop:FriendlyName="dim_Year" msprop:DbSchemaName="dbo" msprop:DbTableName="dim_Year" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="YearId" msprop:design-time-name="2f138dfc-033f-4842-9c17-0d2d8fe66922" msprop:DbColumnName="YearId" msprop:FriendlyName="YearId" type="xs:int" />
+                      <xs:element name="Year" msprop:design-time-name="062caff9-cf07-4d5f-ac21-ba734a159dbb" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+            <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_Fact1" />
+              <xs:field xpath="FactID" />
+            </xs:unique>
+            <xs:unique name="dbo_dim_CaseStatus_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_dim_CaseStatus" />
+              <xs:field xpath="CaseStatusID" />
+            </xs:unique>
+            <xs:unique name="dbo_dim_PHU_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_dim_PHU" />
+              <xs:field xpath="PHU_ID" />
+            </xs:unique>
+            <xs:unique name="dbo_dim_Year_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_dim_Year" />
+              <xs:field xpath="YearId" />
+            </xs:unique>
+            <xs:keyref name="FK_PHUID_Fact1" refer="dbo_dim_PHU_Constraint1">
+              <xs:selector xpath=".//dbo_Fact1" />
+              <xs:field xpath="PHUID" />
+            </xs:keyref>
+            <xs:keyref name="FK_CaseStatus_Fact1" refer="dbo_dim_CaseStatus_Constraint1">
+              <xs:selector xpath=".//dbo_Fact1" />
+              <xs:field xpath="CaseStatusID" />
+            </xs:keyref>
+            <xs:keyref name="FK_YearID_Fact1" refer="dbo_dim_Year_Constraint1">
+              <xs:selector xpath=".//dbo_Fact1" />
+              <xs:field xpath="YearID" />
+            </xs:keyref>
+          </xs:element>
+        </xs:schema>
+        <COVID19_x0020_DDS xmlns="" />
+      </Schema>
+    </DataSourceView>
+    <DataSourceView>
+      <ID>COVID19 DDS 1 FACT 2</ID>
+      <Name>COVID19 DDS 1 FACT 2</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+          <Value>_ALL_TABLES_</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+          <Value></Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+          <Value>
+            <Layouts xmlns="">
+              <Diagram>
+                <Name>_ALL_TABLES_</Name>
+                <DiagramLayout>
+                  <dds>
+                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4177" scrolltop="-743" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="19304" y="12573" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                      <font>
+                        <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                      </font>
+                      <mouseicon>
+                        <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                      </mouseicon>
+                    </diagram>
+                    <layoutmanager>
+                      <ddsxmlobj />
+                    </layoutmanager>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fact2" left="407" top="3988" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000003090000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_Fact2" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_Quarter" left="407" top="8695" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="1947" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b070000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_dim_Quarter" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_CaseStatus" left="20" top="0" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3387" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e00003b0d000034060000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_dim_CaseStatus" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_PHU" left="5807" top="3268" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="4678" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e000046120000a30e0000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_dim_PHU" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="3107" top="4742" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobj>
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                        </ddsxmlobj>
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dataSet.Relations[FK_PHU_Fact2]" vartype="8" />
+                          <property name="Virtual" value="0" vartype="11" />
+                          <property name="VisibleAP" value="0" vartype="3" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="1" sourceattachpoint="24" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="5807" y="5141" />
+                        <point x="3407" y="5141" />
+                      </connector>
+                    </ddscontrol>
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="1508" top="5995" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobj>
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                        </ddsxmlobj>
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dataSet.Relations[FK_Quarter_Fact2]" vartype="8" />
+                          <property name="Virtual" value="0" vartype="11" />
+                          <property name="VisibleAP" value="0" vartype="3" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="1907" y="8695" />
+                        <point x="1907" y="6295" />
+                      </connector>
+                    </ddscontrol>
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="1314" top="1089" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="893" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobj>
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                        </ddsxmlobj>
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dataSet.Relations[FK_CaseStatus_Fact2]" vartype="8" />
+                          <property name="Virtual" value="0" vartype="11" />
+                          <property name="VisibleAP" value="0" vartype="3" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="1" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="1713" y="1588" />
+                        <point x="1713" y="2788" />
+                        <point x="1907" y="2788" />
+                        <point x="1907" y="3988" />
+                      </connector>
+                    </ddscontrol>
+                  </dds>
+</DiagramLayout>
+                <ShowRelationshipNames>False</ShowRelationshipNames>
+                <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+                <DiagramViewPortLeft>-4177</DiagramViewPortLeft>
+                <DiagramViewPortTop>-743</DiagramViewPortTop>
+                <DiagramBoundingLeft>0</DiagramBoundingLeft>
+                <DiagramBoundingTop>0</DiagramBoundingTop>
+                <DiagramZoom>100</DiagramZoom>
+              </Diagram>
+            </Layouts>
+          </Value>
+        </Annotation>
+      </Annotations>
+      <DataSourceID>DDS DATH</DataSourceID>
+      <Schema>
+        <xs:schema id="COVID19_x0020_DDS_x0020_1_x0020_FACT_x0020_2" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+          <xs:element name="COVID19_x0020_DDS_x0020_1_x0020_FACT_x0020_2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="e7bf053e-312f-4da9-9ec6-b14bb32a02c0">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="dbo_Fact2" msprop:design-time-name="f4522334-ccb3-4fe7-9aea-2bfe5bfc781c" msprop:FriendlyName="Fact2" msprop:DbSchemaName="dbo" msprop:DbTableName="Fact2" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="FactID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="36edac70-b65e-490a-886f-70c8603f9670" msprop:DbColumnName="FactID" msprop:FriendlyName="FactID" type="xs:int" />
+                      <xs:element name="PHUID" msprop:design-time-name="4ac109bd-e2e6-4942-864c-87ba22b49f66" msprop:DbColumnName="PHUID" msprop:FriendlyName="PHUID" type="xs:int" minOccurs="0" />
+                      <xs:element name="CaseStatusID" msprop:design-time-name="8ddd5311-c09e-4cf7-a694-8e9d5f045679" msprop:DbColumnName="CaseStatusID" msprop:FriendlyName="CaseStatusID" type="xs:int" minOccurs="0" />
+                      <xs:element name="QuarterID" msprop:design-time-name="35d9765e-e8bb-4994-b545-01b95fae8449" msprop:DbColumnName="QuarterID" msprop:FriendlyName="QuarterID" type="xs:int" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_dim_Quarter" msprop:design-time-name="d01e016b-1a3e-47ad-a142-817b97ae724c" msprop:FriendlyName="dim_Quarter" msprop:DbSchemaName="dbo" msprop:DbTableName="dim_Quarter" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="QuarterId" msprop:design-time-name="bdee2c8e-7233-4daf-8ea7-026967ee2d61" msprop:DbColumnName="QuarterId" msprop:FriendlyName="QuarterId" type="xs:int" />
+                      <xs:element name="Quarter" msprop:design-time-name="03a9df33-4345-4a8c-91b6-89493ede0261" msprop:DbColumnName="Quarter" msprop:FriendlyName="Quarter" type="xs:int" />
+                      <xs:element name="YearId" msprop:design-time-name="a03c28e9-985e-4476-8f18-5b2e3b3b109f" msprop:DbColumnName="YearId" msprop:FriendlyName="YearId" type="xs:int" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_dim_CaseStatus" msprop:design-time-name="f6d8ceb7-4806-4767-b6cf-e5af4a5a7c42" msprop:FriendlyName="dim_CaseStatus" msprop:DbSchemaName="dbo" msprop:DbTableName="dim_CaseStatus" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="CaseStatusID" msprop:design-time-name="0321f3e1-ca4b-4f71-ba46-2059f5a10253" msprop:DbColumnName="CaseStatusID" msprop:FriendlyName="CaseStatusID" type="xs:int" />
+                      <xs:element name="CaseStatusName" msprop:design-time-name="80eb67b9-8196-4c32-93d0-737c7f09b8cc" msprop:DbColumnName="CaseStatusName" msprop:FriendlyName="CaseStatusName">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_dim_PHU" msprop:design-time-name="7b922316-8029-4ce5-9ca9-59c94bb5bf09" msprop:FriendlyName="dim_PHU" msprop:DbSchemaName="dbo" msprop:DbTableName="dim_PHU" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="PHU_ID" msprop:design-time-name="30a4f4c3-4308-46c8-a238-89e2902de3ec" msprop:DbColumnName="PHU_ID" msprop:FriendlyName="PHU_ID" type="xs:int" />
+                      <xs:element name="ReportingPHU" msprop:design-time-name="d5629d99-c897-4df0-a43f-e933e10b18cc" msprop:DbColumnName="ReportingPHU" msprop:FriendlyName="ReportingPHU">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="100" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="ReportingPhuAddress" msprop:design-time-name="46b3d31f-dbd3-4a96-becc-d406494c2dbb" msprop:DbColumnName="ReportingPhuAddress" msprop:FriendlyName="ReportingPhuAddress" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="1000" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="ReportingPHUPostalCode" msprop:design-time-name="deba02e5-2b00-402f-85fe-0bd7ddcdd634" msprop:DbColumnName="ReportingPHUPostalCode" msprop:FriendlyName="ReportingPHUPostalCode" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="ReportingPHUWebsite" msprop:design-time-name="810801d1-b2cc-412c-a30e-35c9ad85ac41" msprop:DbColumnName="ReportingPHUWebsite" msprop:FriendlyName="ReportingPHUWebsite" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="1000" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Reporting_PHU_Latitude" msprop:design-time-name="1ed2c3db-7a1f-4676-abc1-27cdb3be3dfe" msprop:DbColumnName="Reporting_PHU_Latitude" msprop:FriendlyName="Reporting_PHU_Latitude" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Reporting_PHU_Longitude" msprop:design-time-name="3f4cafde-b420-40c5-92e5-c6b8a62c42de" msprop:DbColumnName="Reporting_PHU_Longitude" msprop:FriendlyName="Reporting_PHU_Longitude" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="PHUGroupID" msprop:design-time-name="09b2c92a-41f4-4264-8543-8cd42c7b1440" msprop:DbColumnName="PHUGroupID" msprop:FriendlyName="PHUGroupID" type="xs:int" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+            <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_Fact2" />
+              <xs:field xpath="FactID" />
+            </xs:unique>
+            <xs:unique name="dbo_dim_Quarter_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_dim_Quarter" />
+              <xs:field xpath="QuarterId" />
+            </xs:unique>
+            <xs:unique name="dbo_dim_CaseStatus_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_dim_CaseStatus" />
+              <xs:field xpath="CaseStatusID" />
+            </xs:unique>
+            <xs:unique name="dbo_dim_PHU_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_dim_PHU" />
+              <xs:field xpath="PHU_ID" />
+            </xs:unique>
+            <xs:keyref name="FK_CaseStatus_Fact2" refer="dbo_dim_CaseStatus_Constraint1">
+              <xs:selector xpath=".//dbo_Fact2" />
+              <xs:field xpath="CaseStatusID" />
+            </xs:keyref>
+            <xs:keyref name="FK_Quarter_Fact2" refer="dbo_dim_Quarter_Constraint1">
+              <xs:selector xpath=".//dbo_Fact2" />
+              <xs:field xpath="QuarterID" />
+            </xs:keyref>
+            <xs:keyref name="FK_PHU_Fact2" refer="dbo_dim_PHU_Constraint1">
+              <xs:selector xpath=".//dbo_Fact2" />
+              <xs:field xpath="PHUID" />
+            </xs:keyref>
+          </xs:element>
+        </xs:schema>
+        <COVID19_x0020_DDS_x0020_1_x0020_FACT_x0020_2 xmlns="" />
+      </Schema>
+    </DataSourceView>
+  </DataSourceViews>
+</Database>
